@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <section class="container row nav">
+        <div class="logo"> 
+            <h2>Ascent Academy Surveys</h2>
+            <p>Your words our work<br>
+Company CEO: Mr. Tabish Hasan</p>
+        </div>
+        <a href="/#feed" class="nav-btn">Survey</a>
+    </section> 
+
+    <!-- HEADER -->
+    <section class="container row hero">
+        <div class="content">
+                <h1>Let's build the future together</h1>
+                <p>Take our survey now</p>
+                <a href="/#feed" class="hero-btn">Take now</a>
+        </div>   
+        <div class="row hero-img">
+            <img src="./assets/3d illu man.png" alt="" width="420px"> 
+            <div class="circle"></div>
+
+        </div>
+        
+        <img src="./assets/ball.png" alt="" class="illu" id="ball">
+        <img src="./assets/graph.png" alt="" class="illu" id="graph">
+        <img src="./assets/mail.png" alt="" class="illu" id="mail">
+       
+
+    </section>
+
+    <!-- SURVEY-FORM -->
+
+    <section class="feed row" id="feed">
+        <div class="box" id="feedback" color="red">
+            <h1>Survey Form</h1>
+            <p>Have any questions and suggestions? Drop us a feedback</p>
+    
+                <form action="/"  id="form"> 
+
+                    <!-- NAME -->
+                    <div class="input-box">
+                        <label for="name">* Name</label>
+                        <input type="text" id="name" placeholder="Your name here">
+                        <div class="error"></div>
+                    </div>
+
+                    <!-- AGE -->
+                    <div class="input-box">
+                        <label for="age">* Age</label>
+                        <input type="number" id="age" placeholder="Your age here">
+                        <div class="error"></div>
+                    </div>
+                    
+                    <!-- GENDER -->
+
+                    <div class="radio-box">
+                        <div class="radio-header">
+                            <label for="gender">Gender</label>
+                        </div>
+                        <div class="radio-option">
+                            <div class="option">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="gender" id="other">
+                                <label for="other">Prefer not to say</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="column">
+
+                        <!-- EMAIL -->
+                        <div class="input-box">
+                            <label for="email">* Email</label>
+                            <input type="email" id="email" placeholder="Your email here">
+                            <div class="error"></div>
+                        </div>
+    
+                        <!-- CONTACT NUMBER -->
+                        <div class="input-box">
+                            <label for="number">* Contact no.</label>
+                            <input type="number" id="number" placeholder="Your contact no. here">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="column">
+                        
+                        <!-- COUNTRY -->
+                        <div class="input-box">
+                            <label for="">Country</label>
+                            <div class="select-box">
+                                <select name="" id="country">
+                                    <option value="">Select your option</option>
+                                    <option value="">India</option>
+                                    <option value="">Germany</option>
+                                    <option value="">Russia</option>
+                                    <option value="">South Korea</option>
+                                    <option value="">Japan</option>
+                                    <option value="">USA</option>
+                                    <option value="">Pakistan</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- CITY -->
+                        <div class="input-box">
+                            <label for="">City</label>
+                            <input type="text" placeholder="Enter your city" id="city">
+                        </div>    
+                    </div>
+
+                    <!-- QUESTIONS -->
+
+                    <div class="input-box">
+                        <label for="">Which option best describes you</label>
+                        <div class="select-box">
+                            <select name="" id="describe">
+                                <option value="">Select your option</option>
+                                <option value="">Student</option>
+                                <option value="">Software Engineer</option>
+                                <option value="">Manager</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div> 
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">* What is your views on the Artificial Inteligence(AI)?</label>
+                        <textarea name="feedback" id="Q1" cols="30" rows="5" placeholder="Give your opinion"></textarea> 
+                        <div class="error"></div>  
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">* Is ChatGPT(an AI powered chatbot) a real threat to humanity?</label>
+                        <textarea name="feedback" id="Q2" cols="30" rows="5" placeholder="Give your opinion"></textarea>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">* Bard vs ChatGPT?</label>
+                        <textarea name="feedback" id="Q3" cols="30" rows="5" placeholder="Give your opinion"></textarea>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">* Top 3 AI tools that you use in your daily life?</label>
+                        <textarea name="feedback" id="Q4" cols="30" rows="5" placeholder="Give your answer"></textarea>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-box"> 
+                        <label for="">Feedback or any questions? (optional)</label>
+                        <textarea name="feedback" id="" cols="30" rows="5" placeholder="Give your feedback" ></textarea>
+                    </div>
+
+                    <div class="radio-box">
+                        <div class="radio-header">
+                            <label for="rate">How would you rate our website?</label>
+                        </div>
+                        <div class="radio-option">
+                            <div class="option">
+                                <input type="radio" name="rate" id="one">
+                                <label for="one">1</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="rate" id="two">
+                                <label for="two">2</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="rate" id="three">
+                                <label for="three">3</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="rate" id="four">
+                                <label for="four">4</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="rate" id="five">
+                                <label for="five">5</label> 
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="radio-box">
+                        <div class="radio-header">
+                            <label for="recommend">Would you recommend our website to your friends?</label>
+                        </div>
+                        <div class="radio-option">
+                            <div class="option">
+                                <input type="radio" name="recommend" id="yes">
+                                <label for="yes">Yes</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="recommend" id="no">
+                                <label for="no">No</label> 
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="recommend" id="maybe">
+                                <label for="maybe">May be</label> 
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- BUTTONS -->
+                    <div class="form-btn">
+                        <button type="submit" id="open-popup" >Submit</button>
+                        <button type="reset" id="reset-btn">Reset</button>
+                    </div>
+
+                    <div class="popup">
+                        <div class="popup-overlay"></div>
+                            <div class="popup-content">
+                                <img src="assets/tic.png" alt="">
+                                <h1>Thank you</h1>
+                                <p>Your valuable answers help us</p>
+                                <button id="close-popup">OK</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div> 
+        </section>
+
+        <!-- POPUP -->
+        
+     
+
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <h3>Surveys</h3>
+                <p>Your words our work</p>
+                <ul class="socials">
+                    <li><a href="#"><ion-icon name="mail-outline"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy;2023 Surveys|| designed by <span><a href="https://www.linkedin.com/in/tabish-hasan-85a6127a">Tabish Hasan</a>
+                    </span></p>
+            </div>
+        </footer>
+
+
+        
+    <!-- SCRIPT -->
+    <script defer src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
